@@ -1,0 +1,202 @@
+/* theme one */
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan&display=swap');
+:root {
+    /* backgrounds */
+    --main-background:  hsl(222, 26%, 31%);
+    --toggle-keypad-background: hsl(223, 31%, 20%);
+    --screen-background: hsl(224, 36%, 15%);
+
+    /* keys */
+    --delete-reset-key-background: hsl(225, 21%, 49%);
+    --delete-reset-key-shadow: hsl(224, 28%, 35%);
+    --equal-key-background: hsl(6, 63%, 50%);
+    --equal-key-shadow: hsl(6, 70%, 34%);
+    --numbers-operators-key-background: hsl(30, 25%, 89%);
+    --numbers-operators-key-shadow: hsl(28, 16%, 65%);
+
+    /* text */
+    --primary-text-color: hsl(221, 14%, 31%) ;
+    --secondary-text-color: hsl(0, 0%, 100%);
+}
+
+#credits > a {
+    text-decoration: none;
+    color: var(--equal-key-background);
+}
+
+#credits {
+    color: var(--secondary-text-color);
+}
+
+body {
+    display: grid;
+    min-height: 100vh;
+    place-items: center;
+    background-color: var(--main-background);
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#appTitle {
+    font-family: 'League-Spartan', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    color: var(--secondary-text-color);
+}
+
+#themeTitle {
+    font-family: 'League-Spartan', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 12px;
+    margin-left: 40vh;
+    color: var(--secondary-text-color);
+}
+
+#themeChangeContainer {
+    margin-left: 10px;
+}
+
+.themeLabel {
+    font-family: 'League-Spartan', sans-serif;
+    font-style: normal;
+    font-size: 12px;
+    margin-left: 30px;
+    color: var(--secondary-text-color);
+}
+
+#themeSlider {
+    -webkit-appearance: none;
+    background-color: var(--toggle-keypad-background);
+    border-radius: 30px;
+    height: 30px;
+    width: 125px;
+    margin-left: 10px;
+}
+
+#themeSlider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 18px;
+    width: 18px;
+    border-radius: 10px;
+    margin-left: 5px;
+    background-color: var(--equal-key-background);
+}
+
+#themeSlider::hover {
+    -webkit-appearance: none;
+    background-color: var(--equal-key-shadow);
+}
+
+#calculatorDisplay {
+    background: var(--screen-background);
+    border: none;
+    width: 539px;
+    height: 100px;
+    border-radius: 10px;
+    color: var(--secondary-text-color);
+    font-family: 'League Spartan', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 37px;
+    text-align: right;
+}
+
+#calculatorRows {
+    width: 539px;
+    height: 480px;
+    background: var(--toggle-keypad-background);
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+#row1, #row2, #row3, #row4, #row5{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 50px;
+    width: 488px;
+    height: 60px;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.numberButton, #decimalOperatorButton, #divideOperatorButton, #multiplyOperatorButton, #plusOperatorButton, #subtractOperatorButton {
+    border: none;
+    width: 100px;
+    height: 50px;
+    background-color: var(--numbers-operators-key-background);
+    box-shadow: 0px 4px 0px var(--numbers-operators-key-shadow);
+    border-radius: 9px;
+    color: var(--primary-text-color);
+    font-family: 'League Spartan', sans-serif;
+    font-style: bold;
+    font-weight: 800;
+    font-size: 35px;
+    line-height: 37px;
+    margin-top: 20px;
+}
+
+.numberButton:hover, #decimalOperatorButton:hover, #divideOperatorButton:hover, #multiplyOperatorButton:hover, #plusOperatorButton:hover, #subtractOperatorButton:hover{
+    background-color: var(--numbers-operators-key-shadow);
+}
+
+#deleteOperatorButton {
+    border: none;
+    width: 100px;
+    height: 50px;
+    background-color: var(--delete-reset-key-background);
+    box-shadow: 0px 4px 0px var(--delete-reset-key-shadow);
+    border-radius: 9px;
+    color: var(--secondary-text-color);
+    font-family: 'League Spartan', sans-serif;
+    font-style: bold;
+    font-weight: 800;
+    font-size: 25px;
+    line-height: 37px;
+    margin-top: 20px;
+}
+
+#resetOperatorButton {
+    width: 300px;
+    height: 60px;
+    border: none;
+    background: var(--delete-reset-key-background);
+    box-shadow: 0px 4px 0px var(--delete-reset-key-shadow);
+    border-radius: 9px;
+    font-family: 'League-Spartan', sans-serif;
+    color: var(--secondary-text-color);
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+#deleteOperatorButton:hover, #resetOperatorButton:hover {
+    background-color: var(--delete-reset-key-shadow);
+}
+
+#equalOperatorButton {
+    width: 300px;
+    height: 60px;
+    border: none;
+    background: var(--equal-key-background);
+    box-shadow: 0px 4px 0px var(--equal-key-shadow);
+    border-radius: 9px;
+    font-family: 'League-Spartan', sans-serif;
+    color: var(--secondary-text-color);
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+#equalOperatorButton:hover {
+    background-color: var(--equal-key-shadow);
+}

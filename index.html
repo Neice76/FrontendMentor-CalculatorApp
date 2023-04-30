@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../resources/images/favicon.png" size="32x32">
+    <link rel="stylesheet" href="./index.css">
+    <title>Frontend Mentor | Calculator App</title>
+</head>
+<body>
+    <div id="calculator">
+        <header>
+            <h1 id="appTitle">Calc</h1>
+            <h6 id="themeTitle">Theme</h6>
+            <div id="themeChangeContainer">
+                <div id="themeNumberLabels">
+                    <label for="theme-1" class="themeLabel">1</label>
+                    <label for="theme-2" class="themeLabel">2</label>
+                    <label for="theme-3" class="themeLabel">3</label>
+                </div>
+                <input type="range" name="themeSlider" id="themeSlider" min="1" max="3">
+            </div>
+        </header>
+
+        <input type="text" id="calculatorDisplay"/>
+
+        <div id="calculatorRows">
+            <div id="row1">
+                <button class="numberButton" value="7">7</button>
+                <button class="numberButton" value="8">8</button>
+                <button class="numberButton" value="9">9</button>
+                <button id="deleteOperatorButton" value="DEL">DEL</button>
+            </div>        
+
+            <div id="row2">
+                <button class="numberButton" value="4">4</button>
+                <button class="numberButton" value="5">5</button>
+                <button class="numberButton" value="6">6</button>
+                <button id="plusOperatorButton" value="+">+</button>
+            </div>
+
+            <div id="row3">
+                <button class="numberButton" value="1">1</button>
+                <button class="numberButton" value="2">2</button>
+                <button class="numberButton" value="3">3</button>
+                <button id="subtractOperatorButton" value="-">-</button>
+            </div>
+
+            <div id="row4">
+                <button id="decimalOperatorButton" value=".">.</button>
+                <button class="numberButton" value="0">0</button>
+                <button id="divideOperatorButton" value="/">/</button>
+                <button id="multiplyOperatorButton" value="x">x</button>
+            </div>
+
+            <div id="row5">
+                <button id="resetOperatorButton" value="reset">RESET</button>
+                <button id="equalOperatorButton" value="=">=</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="credits">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">FrontEnd Mentor</a>
+        Coded by <a href="https://github.com/Neice76">TreNyce Price - Neice76</a>
+    </div>
+
+    <script src="./calculator.js"></script>
+</body>
+</html>
