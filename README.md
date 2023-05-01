@@ -21,6 +21,6 @@ Bonus: Have their initial theme preference checked using prefers-color-scheme an
 - more calculator functions
 
 ## Links
-- Frontmentor solution: 
+- Frontmentor solution: https://www.frontendmentor.io/solutions/calculator-app-yYzGhUCuqg
 
 - github code: https://frontend-mentor-calculator-app-pied.vercel.app/
